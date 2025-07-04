@@ -1,5 +1,5 @@
 import { test } from "@playwright/test";
-import { login } from "../utils/login";
+import { login } from "./login";
 import { faker } from "@faker-js/faker";
 
 test("Create 30 employees and paginate", async ({ page }) => {
@@ -26,6 +26,6 @@ test("Create 30 employees and paginate", async ({ page }) => {
         await page.click("text=PIM"); // return to list for next iteration
     }
 
-    await page.evaluate(() => window.scrollBy(0, 2000));
+    await page.evaluate(() => window.scrollBy(0, 1000));
     await page.locator("i.bi-chevron-right").click();
 });

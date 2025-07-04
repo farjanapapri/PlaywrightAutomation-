@@ -1,6 +1,6 @@
 import { test } from "@playwright/test";
-import { login } from "../utils/login";
-import { getEmployee } from "../utils/employeeData";
+import { login } from "./login";
+import { getEmployee } from "./employeeData";
 
 test.beforeEach(async ({ page }) => {
     await login(page);

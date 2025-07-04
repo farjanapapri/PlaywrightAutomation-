@@ -15,5 +15,6 @@ test("Create Employee", async ({ page }) => {
     await page.locator("//form/div[1]/descendant::input[5]").fill(employee.id);
 
     await page.locator("[type=submit]").click();
+    await page.waitForSelector("text=Personal Details");
     //await expect(page).toHaveURL(/personalDetails/);
 });

@@ -6,7 +6,7 @@ import path from "path";
 const filePath = path.join(__dirname, "../utils/employee.json");
 
 function generateShortEmployeeId(): string {
-    const now = Date.now().toString(); // e.g. "1720013320667"
+    const now = Date.now().toString();
     const shortId = now.slice(-6); // take last 6 digits
     return `EMP${shortId}`; // Result: e.g., "EMP332066"
 }
