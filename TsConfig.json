@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+        "target": "ES6",
+        
+        "moduleResolution": "node",
+        "strict": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "types": ["node"],
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "baseUrl": "./",
+        "paths": {
+            "*": ["*"],
+            "src/*": ["src/*"]
+        }
+    },
+    "include": [
+        "src/**/*.ts",
+        "tests/**/*.ts",
+        "eslint.config.mjs",
+        "trace-playwright-deps.ts",
+        "playwright.config.ts"
+    ]
+}
